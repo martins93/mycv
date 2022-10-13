@@ -1,17 +1,16 @@
 import React from "react";
-import { useDarkMode } from "../../hooks/darkModeContext";
+import { buttonInterface } from "../../interface/button";
 import "./style.css";
 
-export default function ButtonWithDarkMode() {
-  const { isDarkMode, setIsDarkMode } = useDarkMode();
+export default function ButtonComponent({
+  className,
+  functionOnClick,
+  title,
+}: buttonInterface) {
   return (
     <div className="buttonWithDarkMode">
-      <button className="btnDark" onClick={() => setIsDarkMode(!isDarkMode)}>
-        <i
-          className={`fa fa-${isDarkMode ? "sun-o" : "moon-o"}`}
-          title={isDarkMode ? "Activate Light Mode" : "Activate Dark Mode"}
-          aria-hidden="true"
-        ></i>
+      <button className="btnDark" onClick={() => functionOnClick()}>
+        <i className={className} title={title} aria-hidden="true"></i>
       </button>
     </div>
   );

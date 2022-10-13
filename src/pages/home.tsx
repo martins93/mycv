@@ -31,9 +31,6 @@ export default function Home() {
         </div>
         <div className="experienceWrapper">
           <div className="work">
-            <h3 className={`titleSkills ${isDarkMode && "darkModeColor"}`}>
-              Work Experience
-            </h3>
             <DetailsComponent
               experience={workExperience}
               functionGoTo={seeDetails}

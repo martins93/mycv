@@ -1,14 +1,21 @@
 import React from "react";
 import "./style.css";
-import ButtonWithDarkMode from "../button";
+import ButtonComponent from "../button";
 import { contact } from "../../Utils/utils";
 import { useDarkMode } from "../../hooks/darkModeContext";
 
 export default function Footer() {
-  const { isDarkMode } = useDarkMode();
+  const { isDarkMode, setIsDarkMode } = useDarkMode();
+  const functionOnClick = () => {
+    setIsDarkMode(!isDarkMode);
+  };
   return (
     <div className={`footer ${isDarkMode && "darkerModeActive"}`}>
-      <ButtonWithDarkMode />
+      <ButtonComponent
+        functionOnClick={functionOnClick}
+        className={`fa fa-${isDarkMode ? "sun-o" : "moon-o"}`}
+        title={isDarkMode ? "Activate Light Mode" : "Activate Dark Mode"}
+      />
       <div className="infoFooter">
         <h6>HOW TO REACH ME</h6>
         <div className="infoContacts">

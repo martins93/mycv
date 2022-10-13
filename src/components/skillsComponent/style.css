@@ -7,6 +7,12 @@ h3.titleSkills {
     color: #2b2b2b;
 }
 
+h4.titleSkills {
+    text-align: center;
+    color: #2b2b2b;
+}
+
+
 .skillsObj {
     height: 65px;
     padding: 8px;

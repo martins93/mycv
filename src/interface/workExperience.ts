@@ -8,7 +8,9 @@ export interface experience {
   role: string;
   company: string;
   tasks: tasks[];
-  duration: string;
+  startDate: string;
+  about?: string;
+  /*   endDate?: string; */
 }
 
 export interface tasks {

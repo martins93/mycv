@@ -32,7 +32,9 @@ export const workExperience = [
         task: "Work with database",
       },
     ],
-    duration: "december 2019",
+    startDate: "2019,12,1",
+    about:
+      "I have been working with React since 2019, during this time I have developed portals, websites and applications. For their development we use the framework React Js, Redux, Typescript ...",
   },
   {
     id: 2,
@@ -48,7 +50,10 @@ export const workExperience = [
         task: "Database queries",
       },
     ],
-    duration: "december 2019",
+    startDate: "2019,04,1",
+    endDate: "2019,12,1",
+    about:
+      "This experiment was carried out with a framework called Oracle: Apex. This project consisted of creating a portal for the purchase and sale of services.",
   },
   {
     id: 3,
@@ -64,7 +69,10 @@ export const workExperience = [
         task: "Creation of a portal for the health area with Angular",
       },
     ],
-    duration: "december 2019",
+    startDate: "2018,10,1",
+    endDate: "2019,1,1",
+    about:
+      "This challenge was carried out on an internship basis, and consisted of a portal to the health area. This portal was developed using Angular.",
   },
   {
     id: 4,
@@ -80,7 +88,10 @@ export const workExperience = [
         task: "Website Creation with Html , CSS, JS",
       },
     ],
-    duration: "december 2019",
+    startDate: "2018,2,1",
+    endDate: "2019,10,1",
+    about:
+      "This challenge was developed as an internship and consisted of creating several websites, using Html Css and JS and also Wordpress.",
   },
 ];
 
@@ -111,7 +122,10 @@ export const educationalExperience = [
         task: "Copyright",
       },
     ],
-    duration: "december 2019",
+    startDate: "2020,09,1",
+    endDate: "2021,1,31",
+    about:
+      "In 2020 I decided to take an intensive course in Marketing at Edit. As throughout my professional career I have worked with websites and portals, I chose to take this course to improve my skills in developing them.",
   },
   {
     id: 2,
@@ -127,7 +141,9 @@ export const educationalExperience = [
         task: "Innovation and Entrepreneurship",
       },
     ],
-    duration: "december 2019",
+    startDate: "2015,9,11",
+    about:
+      "The medical informatics course was the lever that opened the doors for me to the professional world of programming. During the course I learned several programming languages   such as: C, C#, HTML, JS, SQL. This course was also very useful because it gave me a lot of light on the health area and I have already done several works in the area.",
   },
   {
     id: 3,
@@ -147,7 +163,10 @@ export const educationalExperience = [
         task: "Photoshop",
       },
     ],
-    duration: "december 2019",
+    startDate: "2014,09,1",
+    endDate: "2015,05,31",
+    about:
+      "This Multimedia course helped to develop my taste for design, and for creating websites. I learned to work with some image tools and with wordpress",
   },
 ];
 

@@ -10,6 +10,7 @@
     border-right: 3px solid #ddefff;
     height: 100%;
     padding: 10px;
+    overflow: auto;
 }
 
 .experienceWrapper {
@@ -20,4 +21,36 @@
 
 .work {
     padding: 15px;
+}
+
+.centerItems{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.expDetails {
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.expDetails i{
+    font-size: 2rem;
+    padding: 0px 10px;
+}
+
+.expDetails span {
+    font-size: 1.4rem;
+}
+
+.iconWrapper {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.expWrapper {
+    width: 80%;
+    text-align: initial;
 }
