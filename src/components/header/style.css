@@ -1,0 +1,65 @@
+.Header {
+    height: 20vh;
+    position: relative
+}
+
+.blueSide {
+    height: 40%;
+    background: #ddefff;
+}
+
+
+.whiteSide {
+    height: 60%;
+
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.photo {
+    height: 180px;
+    
+    position: relative;
+}
+
+
+.photoWrapper{
+
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        height: 120px;
+        width: 130px;
+        border-radius: 50%;
+        overflow:hidden
+}
+
+.responsiveImg {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}   
+
+p.description {
+    text-align: center;
+}
+
+.darkModeActive{
+    background: #555!important;
+    color:white;
+}
+
+.darkerModeActive{
+    background:#333!important;
+    color:white;
+}
+
+.darkModeColor{
+    color:white!important
+}

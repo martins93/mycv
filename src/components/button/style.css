@@ -1,0 +1,9 @@
+.buttonWithDarkMode {
+    float: right;
+    padding: 20px;
+}
+
+button.btnDark {
+    border: 1px solid #525252;
+    height: 2rem;
+}
