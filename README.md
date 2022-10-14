@@ -29,4 +29,4 @@ localhost:3000
 
 ## Reflection
 
-To deal with the management of the global state I chose to use useContext instead of Redux, because in my opinion for the challenges that were requested it was not justified
+To deal with the management of the global state I chose to use useContext instead of Redux, because in my opinion for the challenges that were requested it was not justified.
