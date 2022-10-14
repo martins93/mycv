@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDarkMode } from "../hooks/darkModeContext";
 import { useLocation } from "react-router-dom";
 import "./style.css";
 import ListDetails from "../components/listDetails";
 import { experience } from "../interface/workExperience";
+import { useNavigate } from "react-router-dom";
+import SLUGS from "../resources/slugs";
+
 export default function Details() {
   const location = useLocation();
   const { isDarkMode } = useDarkMode();
+  const navigate = useNavigate();
+  const objExperience: experience = location?.state?.state;
+  useEffect(() => {
+    if (location.state === null || location.state === undefined) {
+      navigate(SLUGS.home);
+    }
+  }, []);
 
-  const objExperience: experience = location.state.state;
   return (
     <div className={`containerPage ${isDarkMode && "darkModeActive"}`}>
       <div className="containerWrapper">
@@ -28,7 +37,7 @@ export default function Details() {
               About
             </h3>
             <div className="aboutSection">
-              <span>{objExperience.about}</span>
+              <span>{objExperience?.about}</span>
             </div>
           </div>
         </div>

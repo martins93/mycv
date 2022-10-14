@@ -9,6 +9,7 @@ export default function PublicRoutes() {
       <Route path={SLUGS.home} element={<Home />} />
       <Route path={SLUGS.details} element={<Details />} />
       <Route path="/" element={<Navigate to={SLUGS.home} />} />
+      <Route path="*" element={<Navigate to={SLUGS.home} />} />
     </Routes>
   );
 }

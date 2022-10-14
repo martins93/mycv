@@ -6,6 +6,7 @@ import { DarkMode } from "./hooks/darkModeContext";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+
   return (
     <div className="wrapper">
       <DarkMode.Provider value={{ isDarkMode, setIsDarkMode }}>

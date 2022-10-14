@@ -7,7 +7,7 @@ export default function ListDetails({ objExperience }) {
   const { isDarkMode } = useDarkMode();
 
   const calculateTimeLeft = () => {
-    const difference = +new Date() - +new Date(objExperience.startDate);
+    const difference = +new Date() - +new Date(objExperience?.startDate);
 
     let timeLeft = {};
 
@@ -47,7 +47,7 @@ export default function ListDetails({ objExperience }) {
           <i className="fa fa-keyboard-o" aria-hidden="true" title="role"></i>
         </div>
 
-        <span>{objExperience.role}</span>
+        <span>{objExperience?.role}</span>
       </div>
       <div className="expDetails">
         <div className="iconWrapper">
@@ -58,7 +58,7 @@ export default function ListDetails({ objExperience }) {
           ></i>
         </div>
         <div className="expWrapper">
-          <span>{objExperience.company}</span>
+          <span>{objExperience?.company}</span>
         </div>
       </div>
       <div className="expDetails">
@@ -79,7 +79,7 @@ export default function ListDetails({ objExperience }) {
       </div>
       <br />
       <h4 className={`titleSkills ${isDarkMode && "darkModeColor"}`}>Tasks</h4>
-      {objExperience.tasks.map((exp: tasks, index: number) => {
+      {objExperience?.tasks.map((exp: tasks, index: number) => {
         return (
           <ul>
             <li style={{ padding: "5px 10px", fontSize: "1.4rem" }} key={index}>
