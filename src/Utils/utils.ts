@@ -6,15 +6,15 @@ import Boot from "../assets/images/boot.png";
 import Wordpress from "../assets/images/word.png";
 
 export const codingLanguages = [
-  { id: 1, icon: ReactImg, name: "React" },
-  { id: 2, icon: HTMLJS, name: "HTML CSS JS" },
-  { id: 3, icon: SQL, name: "SQL" },
+  { id: 1, icon: HTMLJS, name: "HTML CSS JS" },
+  { id: 2, icon: SQL, name: "SQL" },
 ];
 
 export const frameworks = [
-  { id: 1, icon: Canva, name: "Canva" },
-  { id: 2, icon: Boot, name: "Bootstrap" },
-  { id: 3, icon: Wordpress, name: "Wordpress" },
+  { id: 1, icon: ReactImg, name: "React" },
+  { id: 2, icon: Canva, name: "Canva" },
+  { id: 3, icon: Boot, name: "Bootstrap" },
+  { id: 4, icon: Wordpress, name: "Wordpress" },
 ];
 
 export const workExperience = [
